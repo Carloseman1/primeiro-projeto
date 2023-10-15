@@ -26,6 +26,7 @@ html {
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-size: "Inter", sans-serif;
@@ -151,4 +152,14 @@ footer {
   padding: 24px 0px;
   text-align: center;
   font-size: 14px;
+}
+
+/*media queries*/
+@media (min-width: 700px) {
+  html {
+    --bg-url: url(.assets/assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(assets/assets/bg-desktop-light.jpgg);
+  }
 }
